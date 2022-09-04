@@ -1,0 +1,33 @@
+public class Sequences {
+public class Entity {
+String id;
+List<Entity> childs
+}
+
+ public static Map<String, Entity> group(List<Entity> entities) {
+    //HashMap<String, Entity> map = new HashMap<String, Entity>();
+    return helper(entites);
+ }
+
+ public Map helper( List<Entity> entites){
+
+     List<Entity> list = new ArrayList<Entity>();
+     HashMap<String, Entity> helperHap = new HashMap<String, Entity>();
+
+     for(Entity e: entites){
+        helperMap.put(e.getID(), entity);
+         System.out.println(e.getID());
+         if(e.childs() != null){
+             for(Entity entity: e.childs)
+                list.add(entity);
+         }
+     }
+     helperMap.putAll(helper(list));
+    return helperMap;
+ }
+
+}
+            1
+        2       3
+    4   5   6 7     8
+8   9     10     11
